@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab02 - Bài thực hành 01; 03</title>
+</head>
+
+<body>
+    <h3>Bài thực hành số 01:</h3>
+    <table width="500px" border="1" align="center" cellpadding="5">
+        <caption><h3>Danh sách học viên</h3></caption>
+            <tr>
+                <th rowspan="2">STT</th>
+                <th rowspan="2">Họ tên</th>
+                <th rowspan="2">Ngày sinh</th>
+                <th colspan="3">Điểm</th>
+            </tr>
+            <tr>
+                <th>Toán</th>
+                <th>Văn</th>
+                <th>Anh</th>
+            </tr>
+
+            <tr>
+                <td align="center">1</td>
+                <td> <a href="#">Nguyễn Văn A</a></td>
+                <td align="center">7/8/2024</td>
+                <td align="center">9</td>
+                <td align="center">10</td>
+                <td align="center">9</td>
+            </tr>
+            <tr>
+                <td align="center">2</td>
+                <td> <a href="#">Nguyễn Văn B</a></td>
+                <td align="center">7/8/2024</td>
+                <td align="center">9</td>
+                <td align="center">8</td>
+                <td align="center">9</td>
+            </tr>
+            <tr>
+                <td align="center">3</td>
+                <td> <a href="#">Nguyễn Văn C</a></td>
+                <td align="center">7/8/2024</td>
+                <td align="center">7</td>
+                <td align="center">9</td>
+                <td align="center">9</td>
+            </tr>
+            <tr>
+                <td align="center">4</td>
+                <td> <a href="#">Nguyễn Văn D</a></td>
+                <td align="center">7/8/2024</td>
+                <td align="center">9</td>
+                <td align="center">8</td>
+                <td align="center">9</td>
+            </tr>
+            <tr>
+                <td align="center">5</td>
+                <td> <a href="#">Nguyễn Văn E</a></td>
+                <td align="center">7/8/2024</td>
+                <td align="center">8</td>
+                <td align="center">9</td>
+                <td align="center">8</td>
+            </tr>
+
+    </table>
+
+<br>
+<hr>
+<h3>Bài thực hành số 03:</h3>
+<form action="" method="post">
+    <table width="500px">
+        <caption><h3>Đăng kí thành viên</h3></caption>
+        <tr>
+            <td>Họ và tên:</td>
+            <td><input type="text" name="fullName" id="fullName" size="25"></td>
+        </tr>
+        <tr>
+            <td>Tên đăng nhập:</td>
+            <td><input type="text" name="userName" id="userName" size="25"></td>
+        </tr>
+        <tr>
+            <td>Mật khẩu:</td>
+            <td><input type="password" name="pass" id="pass" size="25"></td>
+        </tr>
+        <tr>
+            <td>Ảnh đại diện:</td>
+            <td><input type="file" name="avata" id="avata" size="25"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email" id="email" size="25"></td>
+        </tr>
+        <tr>
+            <td>Giới tính:</td>
+            <td>
+                <input type="radio" name="male" id="male"/>
+                <label for="male">Nam</label>
+                <input type="radio" name="female" id="female"/>
+                <label for="female">Nữ</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Sở thích:</td>
+            <td>
+                <input type="checkbox" name="bongda" value="football"/>
+                <label for="football">Thể thao</label>
+                <input type="checkbox" name="bongro" value="basketball"/>
+                <label for="basketball">Bóng đá</label>
+                <input type="checkbox" name="bongchuyen" value="volleyball"/>
+                <label for="volleyball">Bóng chuyền</label>
+                <input type="checkbox" name="xemphim" value="phim"/>
+                <label for="phim">Bóng chuyền</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Quê quán:</td>
+            <td>
+                <select name="quequan" id="quequan">
+                <option value="">--Chọn tỉnh--</option>
+                <option value="">Thái Bình</option>
+                <option value="">Nam Định</option>
+                <option value="">Hưng Yên</option>
+                <option value="">Bắc Ninh</option>
+                <option value="">Hà Nam</option>
+                <option value="">Hà Nội</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Địa chỉ:</td>
+            <td><input type="text" name="address" id="address" size="25"></td>
+        </tr>
+        <tr>
+            <td>SĐT:</td>
+            <td><input type="text" name="sdt" id="sdt" size="25"></td>
+        </tr>
+        <tr>
+            <td>Mô tả ngắn:</td>
+            <td>
+                <textarea name="description" id="description" cols="40" rows="5"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Đăng kí" name="rigister">
+                <input type="reset" value="Làm lại" name="reset">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+
+</html>
