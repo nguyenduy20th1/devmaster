@@ -193,8 +193,59 @@ header {
 
 .listItemx .itemx1 .itemx img,
 .listItemx .itemx2 .itemx img {
-    height: 160px;
-    width: 160px;
+    height: 180px;
+    width: 180px;
     margin: 0 14px;
 }
 
+#aboutUs {
+    padding: 16px 0;
+    margin: 0;
+}
+
+#aboutUs h4 {
+    color: #73727c;
+}
+
+#aboutUs p {
+    font-size: 16px;
+    padding-top: 16px;
+    color: #73727c;
+}
+
+#aboutUs .itemAvt {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+#aboutUs .itemAvt .itemAvt-1>img,
+#aboutUs .itemAvt .itemAvt-2>img,
+#aboutUs .itemAvt .itemAvt-3>img {
+    height: 280px;
+    width: 280px;
+}
+
+#aboutUs .itemAvt .itemAvt-1 ul,
+#aboutUs .itemAvt .itemAvt-2 ul,
+#aboutUs .itemAvt .itemAvt-3 ul {
+    padding-top: 16px;
+    display: flex;
+}
+
+#aboutUs .itemAvt .itemAvt-1 ul li,
+#aboutUs .itemAvt .itemAvt-2 ul li,
+#aboutUs .itemAvt .itemAvt-3 ul li {
+    padding: 0;
+    margin: 0;
+    left: 0;
+    list-style: none;
+}
+
+#aboutUs .itemAvt .itemAvt-1 ul li a img,
+#aboutUs .itemAvt .itemAvt-2 ul li a img,
+#aboutUs .itemAvt .itemAvt-3 ul li a img{
+    height: 28px;
+    width: auto;
+    padding-left: 12px;
+}  
