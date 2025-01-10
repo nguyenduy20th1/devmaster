@@ -29,6 +29,7 @@ header {
 }
 
 .topnav .logo {
+    position: relative;
     display: flex;
     align-items: center;
     font-size: 24px;
@@ -42,8 +43,11 @@ header {
 }
 
 .topnav .logo a {
+    position: absolute;
+    width: 140px;
     text-decoration: none;
     color: #ffffff;
+    left: 0;
 }
 
 .topnav .logo span {
@@ -51,14 +55,17 @@ header {
 }
 
 .topnav .menu {
+    position: relative;
     display: flex;
     align-items: center;
     padding-right: 32px;
 }
 
 .topnav .menu ul {
+    position: absolute;
     display: flex;
     list-style: none;
+    right: 0;
 }
 
 .topnav .menu ul li {
