@@ -231,6 +231,7 @@ header {
 #aboutUs .itemAvt .itemAvt-3 ul {
     padding-top: 16px;
     display: flex;
+    justify-content: space-around;
 }
 
 #aboutUs .itemAvt .itemAvt-1 ul li,
@@ -247,5 +248,27 @@ header {
 #aboutUs .itemAvt .itemAvt-3 ul li a img {
     height: 28px;
     width: auto;
-    padding-left: 12px;
+}
+
+#getaQuote {
+    background-color: #2d303a;
+    padding: 16px 0;
+}
+
+#getaQuote .fixwidth {
+    display: block;
+}
+
+#getaQuote p {
+    font-size: 16px;
+    padding-top: 16px;
+    color: #73727c;
+}
+
+#getaQuote .fixwidth .infoForm {
+    display: flex;
+}
+
+#getaQuote .fixwidth .infoForm .itemform {
+    
 }
