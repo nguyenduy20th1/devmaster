@@ -267,8 +267,72 @@ header {
 
 #getaQuote .fixwidth .infoForm {
     display: flex;
+    padding-top: 16px;
 }
 
 #getaQuote .fixwidth .infoForm .itemform {
-    
+
+}
+
+#getaQuote .fixwidth .infoForm .itemform ul li {
+    list-style: none;
+    padding: 4px 0;
+    width: 450px;
+    height: 36px;
+}
+
+#getaQuote .fixwidth .infoForm .itemform ul li > input {
+    width: 100%;
+    height: 100%;
+    padding-left: 12px;
+    border: 3px solid #636268;
+    border-radius: 6px;
+    background-color: #2d303a;
+}
+
+#getaQuote .fixwidth .infoForm .itemform ul li > textarea {
+    width: 100%;
+    height: 56px;
+    padding-left: 12px;
+    border: 3px solid #636268;
+    color: #636268;
+    border-radius: 6px;
+    background-color: #2d303a;
+}
+
+#getaQuote .fixwidth .infoForm .contactform {
+    padding-left: 32px;
+}
+
+#getaQuote .fixwidth .infoForm .contactform h4 {
+    color: #636268;
+    font-size: 20px;
+}
+
+#getaQuote .fixwidth .infoForm .contactform p {
+    color: #636268;
+    font-size: 14px;
+}
+
+#getaQuote .fixwidth .infoForm .contactform ul {
+    padding-top: 8px;
+}
+
+#getaQuote .fixwidth .infoForm .contactform ul li {
+    list-style: none;
+    padding: 1px 0;
+    font-size: 14px;
+}
+
+#getaQuote .fixwidth .infoForm .contactform ul li span {
+    color: #636268;
+}
+
+#getaQuote .fixwidth .infoForm .contactform ul li a {
+    color: #636268;
+    text-decoration: none;
+}
+
+#getaQuote .fixwidth .infoForm .contactform ul li:hover {
+    opacity: 0.6;
 }
