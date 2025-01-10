@@ -16,7 +16,7 @@ body {
 
 .container {
     width: 74%;
-    height: 390px;
+    height: 440px;
     background-color: #0e0e0e;
     border-radius: 28px;
 }
@@ -41,7 +41,7 @@ body {
 
 .container .form .title {
     padding-left: 32px;
-    max-width: 470px;
+    max-width: 360px;
 }
 
 .container .form .title h1 {
@@ -50,22 +50,130 @@ body {
     margin-bottom: 16px;
 }
 
+.container .form .title p {
+    padding-top: 6px;
+}
+
 .container .form .formlogin {
-    max-width: 470px;
+    max-width: 580px;
     display: flex;
     flex-direction: column;
     padding-right: 36px;
 }
 
-.container .form .formlogin li {
+.container .form .formlogin ul li {
     list-style: none;
-    padding-top: 16px;
+    height: 52px;
+    width: 540px;
+    margin-top: 12px;
+    border-radius: 4px;
+}
+
+.container .form .formlogin ul li input {
+    width: 100%;
+    height: 100%;
+    background-color: #1e1f20;
+    padding-left: 18px;
+    border: 2px solid #0e0e0e;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
 .container .form .formlogin a {
-    padding-top: 16px;
+    padding-top: 12px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #759fd9;
+    font-weight: bold;
+}
+
+.container .form .formlogin p a:hover {
+    text-decoration: underline;
 }
 
 .container .form .formlogin p {
-    padding-top: 16px;  
+    padding-top: 36px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #a2a2a2;
+}
+
+.container .btn {
+    width: 100%;
+    height: 62px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container .btn ul {
+    display: flex;
+    list-style: none;
+    margin-right: 32px;
+}
+
+.container .btn ul li {
+    margin: 0 12px;
+    padding: 12px 18px;
+    border-radius: 20px;
+}
+
+.container .btn ul li:hover {
+    background-color: #759fd9;
+    transition: 0.4s;
+}
+
+.container .btn ul li:hover a {
+    color: #35404f;
+}
+
+.container .btn ul li a {
+    text-decoration: none;
+    color: #759fd9;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.container .footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .footer .language {
+    margin-left: 32px;
+}
+
+.container .footer .language a {
+    background-color: #1e1f20;
+    color: #a2a2a2;
+    font-size: 14px;
+    padding-top: 6px;
+}
+
+.container .footer .support {
+    margin-right: 32px;
+}
+
+.container .footer .support ul {
+    display: flex;
+    list-style: none;
+}
+
+.container .footer .support ul li a{
+    border-radius: 6px;
+}
+
+.container .footer .support ul li a:hover {
+    background-color: #2d2f31;
+    transition: 0.2s;
+}
+
+.container .footer .support ul li a {
+    background-color: #1e1f20;
+    color: #a2a2a2;
+    font-size: 14px;
+    padding: 6px 6px;
+    margin: 0 2px;
+    text-decoration: none;
 }
