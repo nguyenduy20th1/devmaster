@@ -41,7 +41,7 @@ body {
 
 .container .form .title {
     padding-left: 32px;
-    max-width: 360px;
+    min-width: 320px;
 }
 
 .container .form .title h1 {
@@ -62,9 +62,10 @@ body {
 }
 
 .container .form .formlogin ul li {
+    display: block;
     list-style: none;
     height: 52px;
-    width: 540px;
+    max-width: 540px;
     margin-top: 12px;
     border-radius: 4px;
 }
