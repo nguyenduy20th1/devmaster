@@ -6,7 +6,7 @@
 }
 
 .app {
-    position: relative;
+
 }
 
 .max-width {
@@ -158,9 +158,19 @@
     outline: none;
 }
 
+.content {
+    position: relative;
+}
+
 .content .banner {
+    position: relative;
     width: 100%;
     height:auto;
+}
+
+.content .banner .banner-img {
+    display: block;
+    position: relative;
 }
 
 .content .banner .banner-img img {
@@ -168,6 +178,38 @@
 }
 
 .content .banner .banner-menu {
-    background-color: #ededed;
-    height: 72px;
+    position: absolute;
+    background-color: #ffffff;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    padding: 10px;
+}
+
+.content .banner .banner-menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 76px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.content .banner .banner-menu ul li {
+    display: block;
+    list-style: none;
+    font-size: 18px;
+}
+
+.content .banner .banner-menu ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.content .banner .banner-menu ul li i {
+    font-size: 22px;
+    color: #1670c6;
 }
