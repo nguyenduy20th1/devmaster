@@ -80,6 +80,10 @@ body {
     font-size: 16px;
 }
 
+.container .form .formlogin ul li input:focus {
+    outline: none;
+}
+
 .container .form .formlogin a {
     padding-top: 12px;
     font-size: 14px;
