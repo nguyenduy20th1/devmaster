@@ -175,6 +175,7 @@
 
 .content .banner .banner-img img {
     width: 100%;
+    height: 100%;
 }
 
 .content .banner-menu {
@@ -192,7 +193,7 @@
     height: 56px;
     width: 1100px;
     background-color: #ededed;
-    margin: -30px;
+    margin-top: -30px;
     padding: 10px;
     box-shadow: -1px -1px 4px;
 }
@@ -227,32 +228,88 @@
     height: 220px;
 }
 
-.content .content-info .content-info-title {
-    position: absolute;
+.content .content-info .content-info_title {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
-.content .content-info .content-info-title img {
+.content .content-info .content-info_title img {
     height: 76px;
     width: auto;
     padding: 0 4px;
 }
 
-.content .content-info .content-info-title li {
+.content .content-info .content-info_title li {
     display: block;
     border-bottom: 4px solid #44b1ec;
     list-style: none;
     padding: 8px 6px;
 }
 
-.content .content-info .content-info-title li h2 {
+.content .content-info .content-info_title li h2 {
     font-size: 38px;
     font-weight: 700;
     color: #1670c6;
+}
+
+.content .content-info .content-info_content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .content-info .content-info_content-img {
+    display: block;
+    max-width: 50%;
+    text-align: center;
+}
+
+.content .content-info .content-info_content-img img {
+    width: 100%;
+}
+
+.content .content-info .content-info_content-text {
+    width: 100%;
+}
+
+.content-info_content-text {
+    display: block;
+}
+
+.content-info_content-text ul:first-child {
+    background-color: #e6e6e6;
+    padding: 28px 72px;
+}
+
+.content-info_content-text ul:last-child {
+    padding: 28px 72px;
+}
+
+.content-info_content-text > ul > li {
+    list-style: none;
+    display: flex;
+    line-height: 1.5;
+    padding: 4px 0;
+}
+
+.content-info_content-text > ul > h2 {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.content-info_content-text > ul > li > p > b {
+    color: #2671b8;
+    font-size: 16px;
+}
+
+.content-info_content-text > ul > li > i {
+    font-size: 16px;
+    color: #f4cd33;
+    margin-right: 4px;
 }
 
