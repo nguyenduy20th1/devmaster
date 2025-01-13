@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "UTMSwiss721BlackCondensed";
+    src: url('../Day04/font/UTM Swiss/UTMSwiss721BlackCondensed.ttf');
+}
+
+@font-face {
+    font-family: "UTMSwissCondensed";
+    src: url('../Day04/font/UTM Swiss/UTMSwissCondensed.ttf');
+}
+
+@font-face {
+    font-family: "UTMSwissCondensedBold";
+    src: url('../Day04/font/UTM Swiss/UTMSwissCondensedBold.ttf');
+}
