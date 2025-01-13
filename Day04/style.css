@@ -9,13 +9,12 @@
 }
 
 .max-width {
-    max-width: 1300px;
+    max-width: 1400px;
     margin: auto;
 }
 
 .header {
     background-color: #ededed;
-    height: 186px;
 }
 
 .header .header-logo {
@@ -23,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 120px;
+    height: 180px;
 }
 
 .header .header-logo .header-logo_1 img {
@@ -100,7 +99,7 @@ nav {
 .header .header-menu {
     display: flex;
     align-items: center;
-    height: 66px;
+    height: 100px;
 }
 
 .header .header-menu .header-menu_1 {
@@ -122,11 +121,7 @@ nav {
     padding: 20px;
 }
 
-.header .header-menu .header-menu_1 li a:hover {
-    background-color: #86b3e5;
-    transition: 0.3s;
-    border-radius: 6px;
-}
+
 
 .header .header-menu .header-menu_search {
     display: flex;
@@ -197,10 +192,10 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 56px;
-    width: 1300px;
+    height: 110px;
+    width: 100%;
     background-color: #ededed;
-    margin-top: -30px;
+    margin-top: -55px;
     padding: 10px;
     box-shadow: -1px -1px 4px;
 }
@@ -219,12 +214,13 @@ nav {
 .content .banner-menu ul li a {
     text-decoration: none;
     color: #000000;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: bold;
+    padding: 0 10px;
 }
 
 .content .banner-menu ul li i {
-    font-size: 20px;
+    font-size: 32px;
     color: #1670c6;
 }
 
@@ -232,7 +228,7 @@ nav {
     position: relative;
     display: block;
     background-color: #f6f6f6;
-    height: 220px;
+    height: 250px;
 }
 
 .content .content-info .content-info_title {
@@ -242,6 +238,7 @@ nav {
     align-items: center;
     height: 100%;
     width: 100%;
+    padding-top: 40px;
 }
 
 .content .content-info .content-info_title img {
@@ -259,7 +256,7 @@ nav {
 
 .content .content-info .content-info_title li h2 {
     font-size: 38px;
-    font-weight: 700;
+    font-weight: bold;
     color: #1670c6;
 }
 
@@ -281,7 +278,7 @@ nav {
 }
 
 .content .content-info .content-info_content-text {
-    width: 100%;
+    width: 50%;
 }
 
 .content-info_content-text {
@@ -336,9 +333,13 @@ nav {
 
 .content-fields-option {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 40px 0;
+}
+
+.border-content {
+    background-color: #d6d4d5;
 }
 
 .content-fields-option-item {
@@ -346,22 +347,27 @@ nav {
 }
 
 .content-fields-option-item img {
-    width: 180px;
+    width: auto;
     height: 180px;
     border-radius: 10%;
 }
 
-.content-fields-option-item p {
-    padding: 16px 0;
+.content-fields-option-item a {
+    text-decoration: none;
+}
+
+.content-fields-option-item a p {
+    margin-top: 30px;
     font-weight: bold;
     color: #1670c6;
+    font-size: 20px;
 }
 
 .content-info_content2 {
     position: relative;
     width: 100%;
     height: 260px;
-    background-color: #3979b7;
+    background: url(../Day04/img/background1.png) no-repeat center center;
 }
 
 .content-info_content2 ul {
@@ -384,11 +390,12 @@ nav {
 
 .content-info_content2 ul li h3 {
     font-size: 32px;
+    font-weight: bold;
     padding-bottom: 8px;
 }
 
 .content-info_content2 ul li p {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
 }
 
