@@ -4,13 +4,19 @@
     box-sizing: border-box;
 }
 
+html, body {
+    
+}
+
 .app {
     font-family: "UTMSwissCondensed";
+    
 }
 
 .max-width {
-    max-width: 1400px;
+    max-width: 1410px;
     margin: auto;
+    height: 100%;
 }
 
 .header {
@@ -161,7 +167,9 @@ nav {
 }
 
 .content {
+    display: block;
     position: relative;
+    
 }
 
 .content .banner {
@@ -571,9 +579,9 @@ nav {
 .btn-project {
     display: flex;
     justify-content: center;
-    padding: 60px 0;
+    padding: 60px 0 20px;
     text-align: center;
-    height: 180px;
+    height: 160px;
     width: 100%;
 }
 
@@ -590,5 +598,43 @@ nav {
 .btn-project p a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 26px;
+    font-family: "UTMSwissCondensedBold";
+}
+
+.content-info-partner {
+    padding: 50px;
+    background-color: #f6f6f6;
+}
+
+.content-info-partner-icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 0;
+    width: 100%;
+}
+
+.content-info-partner-icon li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 262px;
+    height: 162px;
+    background-color: #ffffff;
+}
+
+.footer {
+    position: relative;
+    display: block;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #1670c6;
+    color: #ffffff;
 }
