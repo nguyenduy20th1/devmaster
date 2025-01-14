@@ -32,8 +32,8 @@
     padding-right: 10px;
 }
 
-.header .header-logo .header-logo_1 ul li,
 .header .header-logo .header-logo_2 ul li{
+    font-family: "UTMSwissCondensedBold";
     list-style: none;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .header .header-logo .header-logo_1 ul li:last-child {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 100;
     color: #7eb4ee;
 }
@@ -303,6 +303,7 @@ nav {
 .content-info_content-text > ul > h2 {
     font-size: 20px;
     padding-bottom: 20px;
+    font-family: "UTMSwissCondensedBold";
 }
 
 .content-info_content-text > ul > li > p > b {
@@ -495,6 +496,53 @@ nav {
     color: #000000;
 }
 
-.content-project_title-fix {
-    
+.content-info-project {
+    padding: 50px;
 }
+
+.content-project_title-fix {
+    display: block;
+    position: relative;
+    height: 120px;
+}
+
+.content-project_menu {
+    height: 160px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content-project_menu ul{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-project_menu ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 72px;
+    width: 400px;
+    background-color: #bcbcbc;
+}
+
+.content-project_menu ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-family: "UTMSwissCondensedBold";
+}
+
+.content-project_menu ul .project-selection {
+    background-color: #3284c0;
+}
+
+.content-project_menu ul .project-selection a {
+    color: #ffffff;
+}
+
