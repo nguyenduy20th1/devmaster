@@ -534,7 +534,7 @@ nav {
 .content-project_menu ul li a {
     text-decoration: none;
     color: #000000;
-    font-size: 20px;
+    font-size: 24px;
     font-family: "UTMSwissCondensedBold";
 }
 
@@ -546,3 +546,49 @@ nav {
     color: #ffffff;
 }
 
+.content-info-project-item {
+    display: grid;
+    gap: 14px;
+    justify-content: space-between;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+}
+
+.content-info-project-item-box {
+    height: 342px;
+    width: 450px;
+    background-color: #f6f6f6;
+    border-radius: 4px;
+}
+
+.content-info-project-item-box-img,
+.content-info-project-item-box-text {
+    padding-top: 16px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.btn-project {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    text-align: center;
+    height: 180px;
+    width: 100%;
+}
+
+.btn-project p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 300px;
+    background-color: #3184bf;
+    text-decoration: none;
+}
+
+.btn-project p a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
