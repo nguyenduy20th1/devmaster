@@ -390,7 +390,7 @@ nav {
     position: relative;
     width: auto;
     height: 360px;
-    background: url(../Day04/img/background1.png) no-repeat center center;
+    background: url(../css/img/background1.png) no-repeat center center;
 }
 
 .content-info_content2 ul {
