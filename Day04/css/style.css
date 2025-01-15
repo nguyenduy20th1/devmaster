@@ -28,12 +28,12 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 180px;
+    height: 11.25rem;
 }
 
 .header .header-logo .header-logo_1 img {
     display: block;
-    height: 100px;
+    height: 6.25rem;
     width: auto;
     padding-right: 10px;
 }
@@ -105,7 +105,7 @@ nav {
 .header .header-menu {
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 6.25rem;
 }
 
 .header .header-menu .header-menu_1 {
@@ -156,7 +156,7 @@ nav {
     padding-left: 12px;
     border: none;
     height: 100%;
-    width: 196px;
+    width: 12.25rem;
     border-radius: 6px;
     text-align: right;
     padding-right: 10px;
@@ -198,11 +198,10 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 110px;
+    height: 6rem;
     width: 100%;
     background-color: #ededed;
     margin-top: -55px;
-    padding: 10px;
     box-shadow: -1px -1px 4px;
 }
 
@@ -254,7 +253,7 @@ nav {
 }
 
 .content .content-info .content-info_title img {
-    height: 76px;
+    height: 4.75rem;
     width: auto;
     padding: 0 4px;
 }
@@ -369,7 +368,7 @@ nav {
 
 .content-fields-option-item img {
     display: block;
-    width: 220px;
+    width: 13.75;
     height: auto;
     border-radius: 10%;
     padding-top: 20px;
@@ -389,7 +388,7 @@ nav {
 .content-info_content2 {
     position: relative;
     width: auto;
-    height: 360px;
+    height: 22.5rem;
     background: url(../css/img/background1.png) no-repeat center center;
 }
 
@@ -408,7 +407,7 @@ nav {
 
 .content-info_content2 ul li div {
     display: flex;
-    height: 166px;
+    height: 10.375rem;
     width: auto;
     align-items: center;
 }
@@ -435,7 +434,7 @@ nav {
 .content-info-newfeed-item-menu ul {
     display: block;
     width: 100%;
-    height: 62px;
+    height: 3.875rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -476,7 +475,7 @@ nav {
 }
 
 .content-info-newfeed-item-content-1 {
-    width: 450px;
+    width: 28.125rem;
 }
 
 .content-info-newfeed-item-content-1-text {
@@ -524,7 +523,7 @@ nav {
 }
 
 .content-project_menu {
-    height: 160px;
+    height: 10rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -543,8 +542,8 @@ nav {
     justify-content: center;
     align-items: center;
     list-style: none;
-    height: 72px;
-    width: 400px;
+    height: 4.5rem;
+    width: 25rem;
     background-color: #bcbcbc;
 }
 
@@ -572,8 +571,8 @@ nav {
 }
 
 .content-info-project-item-box {
-    height: 342px;
-    width: 450px;
+    height: 21.375rem;
+    width: 28.125rem;
     background-color: #f6f6f6;
     border-radius: 4px;
 }
@@ -590,7 +589,7 @@ nav {
     justify-content: center;
     padding: 60px 0 20px;
     text-align: center;
-    height: 150px;
+    height: 9.375rem;
     width: 100%;
 }
 
@@ -599,7 +598,7 @@ nav {
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 300px;
+    width: 18.75rem;
     background-color: #3184bf;
     text-decoration: none;
 }
@@ -629,8 +628,8 @@ nav {
     justify-content: center;
     align-items: center;
     list-style: none;
-    width: 262px;
-    height: 162px;
+    width: 16.375rem;
+    height: 10.125rem;
     background-color: #ffffff;
 }
 
