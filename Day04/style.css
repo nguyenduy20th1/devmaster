@@ -230,20 +230,27 @@ nav {
     color: #1670c6;
 }
 
+.content-info_infomation {
+    padding-top: 60px;
+}
+
 .content-info_infomation .content .content-info {
     position: relative;
     display: block;
     background-color: #f6f6f6;
 }
 
-.content .content-info .content-info_title {
+.content-info_title {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
     width: 100%;
-    padding: 80px 0 40px;
+    padding: 40px;
+}
+
+.content .content-info .content-info_title {
+    padding-top: 40px;
 }
 
 .content .content-info .content-info_title img {
@@ -308,18 +315,23 @@ nav {
 }
 
 .content-info_content-text > ul > h2 {
-    font-size: 20px;
+    font-size: 32px;
     padding-bottom: 20px;
     font-family: "UTMSwissCondensedBold";
 }
 
+.content-info_content-text > ul > li > p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
 .content-info_content-text > ul > li > p > b {
     color: #2671b8;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .content-info_content-text > ul > li > i {
-    font-size: 16px;
+    font-size: 20px;
     color: #f4cd33;
     margin-right: 4px;
 }
@@ -331,11 +343,10 @@ nav {
 .content-fields_title-fix {
     display: block;
     position: relative;
-    height: 140px;
 }
 
-.content-fields_title-fix > .content-info_title {
-    padding-top: 52px;
+.content-fields_title-fix {
+
 }
 
 .content-fields-option {
@@ -504,13 +515,12 @@ nav {
 }
 
 .content-info-project {
-    padding: 50px;
+
 }
 
 .content-project_title-fix {
     display: block;
     position: relative;
-    height: 120px;
 }
 
 .content-project_menu {
@@ -580,7 +590,7 @@ nav {
     justify-content: center;
     padding: 60px 0 20px;
     text-align: center;
-    height: 160px;
+    height: 150px;
     width: 100%;
 }
 
