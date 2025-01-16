@@ -14,7 +14,7 @@ html, body {
 }
 
 .max-width {
-    max-width: 1410px;
+    max-width: 88.125rem;
     margin: auto;
     height: 100%;
 }
@@ -166,32 +166,77 @@ nav {
     outline: none;
 }
 
-
-
-
-
-
-
 .content {
-
+    position: relative;
+    display: block;
+    background-color: #f6f6f6;
 }
 
+.content-banner {
+    background-image: url(../css/img/bannertuyendung.png);
+    height: 16.625rem;
+    width: 100%;
+}
+
+.content-banner .content-banner_text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-banner .content-banner_text h2 {
+    font-size: 40px;
+    color: #ffffff;
+    padding-bottom: 20px;
+    font-family: "UTMSwissCondensedBold";
+}
+
+.content-banner .content-banner_text p {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.content-banner .content-banner_text a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.content-table {
+    position: relative;
+    display: block;
+    padding: 6.25rem 0;
+}
 .content-forminfo {
-    max-width: 800px;
+    max-width: 62.5rem;
 }
 
 .content-forminfo form table {
     width: 100%;
     border-collapse: collapse;
-    padding: 10px;
+}
+
+.content-forminfo form table thead {
+    border-top: 3px solid #ccc;
 }
 
 .content-forminfo form table thead th {
-    
+    font-size: 16px;
+    text-align: left;
+    font-family: "UTMSwissCondensedBold";
+    padding: 10px 0 10px 40px;
 }
 
+.content-forminfo form table tbody td {
+    font-size: 16px;
+    padding: 10px 0 10px 40px;
+    border-top: 1px solid #ccc;
+}
 
-
+.content-forminfo form table tbody td:last-child {
+    text-align: center;
+    padding: 0;
+}
 
 
 
