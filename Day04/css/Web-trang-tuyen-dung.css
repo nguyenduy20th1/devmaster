@@ -204,10 +204,12 @@ nav {
 
 .content-table {
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: space-between;
     padding: 6.25rem 0;
 }
 .content-forminfo {
+    width: 70%;
     max-width: 62.5rem;
 }
 
@@ -238,10 +240,42 @@ nav {
     padding: 0;
 }
 
+.content-newfeed {
+    position: relative;
+    display: block;
+    padding-left: 110px;
+}
 
+.content-newfeed h2 {
+    font-size: 32px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    font-family: "UTMSwissCondensedBold";
+}
 
+.content-newfeed .content-newfeed_post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
 
+.content-newfeed .content-newfeed_post ul li {
+    list-style: none;
+    padding-left: 20px;
+}
 
+.content-newfeed .content-newfeed_post ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "UTMSwissCondensedBold";
+}
+
+.content-newfeed .content-newfeed_post ul li p {
+    font-size: 16px;
+    color: #666666;
+}
 
 .footer {
     position: relative;
