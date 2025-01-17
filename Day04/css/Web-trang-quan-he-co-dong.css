@@ -202,231 +202,92 @@ nav {
     color: #ffffff;
 }
 
-.content-newfeed_title-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.menu-form {
+    width: 30%;
+    max-width: 22.5rem;
+    padding-bottom: 6.25rem;
+    font-size: 20px;
 }
 
-.content-newfeed_title .content-newfeed_title-text h2 {
-    position: relative;
-    font-size: 38px;
-    color: #1670c6;
-    margin: 40px 0;
-    padding: 20px 30px;
-    border-bottom: 2px solid #cccccc;
+.menu-form h3 {
+    color: #ffffff;
     font-family: "UTMSwissCondensedBold";
-    text-align: center;
 }
 
-.content-newfeed_title .content-newfeed_title-text h2::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -4px;
-    height: 6px;
-    width: 140px;
-    border-radius: 8px;
+.menu-form ul li {
+    list-style: none;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-form ul li:first-child {
     background-color: #1670c6;
 }
 
-.content-newfeed_post {
+.menu-form ul li a {
     display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-}
-
-.content-newfeed_post .content-newfeed_post_background {
-    position: relative;
-    display: block;
-    max-width: 25%;
-    height: 30rem;
-    background: no-repeat;
-}
-
-.content-newfeed_post .content-newfeed_post_background:first-child {
-    max-width: 45%;
-}
-
-.content-newfeed_post .content-newfeed_post_background:nth-child(1) {
-    background-image: url(../css/img/newfeedtt.png);
-}
-
-.content-newfeed_post .content-newfeed_post_background:nth-child(2) {
-    background-image: url(../css/img/newfeedtt1.png);
-}
-
-.content-newfeed_post .content-newfeed_post_background:nth-child(3) {
-    background-image: url(../css/img/newfeedtt2.png);
-}
-
-.content-newfeed_post .content-newfeed_post1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 100%;
-    width: 100%;
-    padding: 20px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-}
-
-.content-newfeed_post .content-newfeed_post1 ul {
-    
-}
-
-.content-newfeed_post .content-newfeed_post1 ul li {
-    display: block;
-    list-style: none;
-    color: #ffffff;
-}
-
-.content-newfeed_post .content-newfeed_post1 ul li a {
-    padding: 10px 30px;
-    color: #186fc5;
-    background-color: #ffffff;
+    align-items: center;
     text-decoration: none;
     font-family: "UTMSwissCondensedBold";
-}
-
-.content-newfeed_post .content-newfeed_post1 ul li h3 {
-    text-transform: uppercase;
-    padding-top: 30px;
-    font-family: "UTMSwissCondensedBold";
-}
-
-.content-newfeed-group-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 0;
-}
-
-.content-newfeed-group-content-left {
-    padding-right: 40px;
-}
-
-.content-newfeed-group-content-left img {
-    padding-right: 40px;
-}
-
-.content-newfeed-group-content-left-1 {
-    display: flex;
-}
-
-.content-newfeed-group-content-left-1:last-child {
-    padding-top: 40px;
-}
-
-.content-newfeed-group-content-left-1-text {
-    position: relative;
-}
-
-.content-newfeed-group-content-left-1-text h3 {
-    font-family: "UTMSwissCondensedBold";
-}
-
-.content-newfeed-group-content-left-1-text .newfeed-group-time {
-    display: flex;
-    padding: 10px 0;
-}
-
-.content-newfeed-group-content-left-1-text .newfeed-group-time img {
-    padding: 0;
-}
-
-.content-newfeed-group-content-left-1-text .newfeed-group-time p {
-    margin: 0 10px;
-    color: #666666;
-}
-
-.content-newfeed-group-content-left-1-text .btn-newfeed-group {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    width: 220px;
-    border: 1px solid #000000;
-    bottom: 0;
-}
-
-.content-newfeed-group-content-right {
-    position: relative;
-}
-
-.content-newfeed-group-content-right-1-text .newfeed-group-time {
-    display: flex;
-    padding: 10px 0;
-}
-
-.content-newfeed-group-content-right-1-text .newfeed-group-time img {
-    padding: 0;
-}
-
-.content-newfeed-group-content-right-1-text .newfeed-group-time p {
-    margin: 0 10px;
-    color: #666666;
-}
-
-.content-newfeed-group-content-right-1-text .btn-newfeed-group {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    width: 220px;
-    border: 1px solid #000000;
-    bottom: 0;
-}
-
-.content-newfeed-press-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 0 80px 0;
-}
-
-.content-newfeed-press-content img {
-    position: relative;
-    padding-bottom: 20px;
-}
-
-.content-info-newfeed-item-content-1 {
-    width: 28.125rem;
-}
-
-.content-info-newfeed-item-content-1-text {
-    padding: 20px;
-    background-color: #ffffff;
-}
-
-.content-info-newfeed-item-content-1-text hr {
-    margin: 12px 0;
-
-}
-
-.content-info-newfeed-item-content-1-text .btn-newfeed {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding-top: 20px;
-}
-
-.content-info-newfeed-item-content-1-text .btn-newfeed img {
-    padding: 0 20px;
-}
-
-.content-info-newfeed-item-content-1-text .btn-newfeed li {
-    list-style: none;
-    padding: 0 10px;
-}
-
-.content-info-newfeed-item-content-1-text .btn-newfeed li:last-child {
-    border-left: 1px solid #000000;
-}
-
-.content-info-newfeed-item-content-1-text .btn-newfeed li a {
-    text-decoration: none;
     color: #000000;
+    padding-left: 30px;
+}
+
+.menu-form ul li img {
+    height: 1.2rem;
+    width: auto;
+}
+
+.menu-form ul li a p {
+    margin-left: .8rem;
+    font-size: 16px;
+}
+
+.menu-form ul li:first-child {
+    text-align: center;
+}
+
+.content-table {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 6.25rem 0;
+}
+.content-forminfo {
+    width: 66%;
+    max-width: 62.5rem;
+}
+
+.content-forminfo h2 {
+    padding-bottom: 20px;
+    font-family: "UTMSwissCondensedBold";
+}
+
+.content-forminfo form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content-forminfo form table thead {
+    border-top: 3px solid #ccc;
+}
+
+.content-forminfo form table thead th {
+    font-size: 16px;
+    text-align: left;
+    font-family: "UTMSwissCondensedBold";
+    padding: 10px 0 10px 40px;
+}
+
+.content-forminfo form table tbody td {
+    font-size: 16px;
+    padding: 10px 0 10px 40px;
+    border-top: 1px solid #ccc;
+}
+
+.content-forminfo form table tbody td:last-child {
+    text-align: center;
+    padding: 0;
 }
 
 .footer {
