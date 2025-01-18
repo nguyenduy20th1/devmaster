@@ -233,7 +233,7 @@ nav {
     position: relative;
     display: block;
     padding: 4rem 0;
-    max-width: 30%;;
+    width: 26%;;
 }
 
 .content-contact p {
@@ -282,13 +282,99 @@ nav {
     position: relative;
     display: block;
     padding: 4rem 0;
-    max-width: 60%;
+    width: 65%;
+    height: 32.75rem;
+}
+
+.content-answer form {
+    display: block;
+    height: 10px;
+}
+
+.content-answer h2 {
+    width: 19rem;
+    padding: 1.6rem 0 6px 0;
+    border-bottom: 1px solid #cccccc;
+    font-family: "UTMSwissCondensedBold";
+}
+
+.content-answer ul li {
+    position: relative;
+    display: block;
+    padding: .6rem 0;
+    list-style: none;
+    font-family: "UTMSwissCondensedBold";
+}
+
+.content-answer ul li p {
+    display: block;
+    padding: .6rem 0;
+}
+
+.content-answer ul li label {
+    display: inline-block;
+    width: 9rem;
+}
+
+.content-answer ul li label:nth-child(3) {
+    text-align: center;
+}
+
+.content-answer ul li input {
+    height: 2.4rem;
+    font-size: 20px;
+    padding: 8px;
+    outline: none;
+}
+
+.content-answer ul li #name {
+    width: 83.6%;
+}
+
+.content-answer ul li #email {
+    width: 35%;
+}
+
+.content-answer ul li #phone {
+    width: 32%;
+}
+
+.content-answer ul li #text {
+    position: absolute;
+    height: 5rem;
+    width: 83.6%;
+    font-size: 20px;
+    padding: 8px;
+    margin-left: 4px;
+    resize: none;
+    outline: none;
 }
 
 .time-open li img {
     width: auto;
     height: 20px;
     padding-right: .3rem;
+}
+
+.btn-form-answer {
+    position: absolute;
+    width: 10rem;
+    height: 2.6rem;
+    bottom: 0;
+    margin: 0 0 64px 148px;
+}
+
+.btn-form-answer button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #3274b7;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-family: "UTMSwissCondensedBold";
 }
 
 .footer {
