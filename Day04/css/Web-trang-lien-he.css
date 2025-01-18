@@ -34,8 +34,7 @@ html, body {
 .header .header-logo .header-logo_1 img {
     display: block;
     height: 6.25rem;
-    width: auto;
-    padding-right: 10px;
+    max-width: 100%;
 }
 
 .header .header-logo .header-logo_2 ul li{
@@ -202,11 +201,15 @@ nav {
     color: #ffffff;
 }
 
-/* body */
 .address-map {
     position: relative;
     display: block;
     background-color: #f6f6f6;
+}
+
+.address-map img{
+    height: auto;
+    width: 100%;
 }
 
 .address-map-title {
@@ -323,8 +326,9 @@ nav {
 .content-answer ul li input {
     height: 2.4rem;
     font-size: 20px;
-    padding: 8px;
+    padding: 6px;
     outline: none;
+    border: 1px solid #cccccc;
 }
 
 .content-answer ul li #name {
@@ -344,8 +348,9 @@ nav {
     height: 5rem;
     width: 83.6%;
     font-size: 20px;
-    padding: 8px;
+    padding: 6px;
     margin-left: 4px;
+    border: 1px solid #cccccc;
     resize: none;
     outline: none;
 }
