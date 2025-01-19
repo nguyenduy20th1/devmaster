@@ -261,6 +261,10 @@ nav {
     background-color: #1670c6;
 }
 
+.content-project {
+    padding-bottom: 5rem;
+}
+
 .content-project_post {
     display: flex;
     justify-content: space-between;
@@ -275,6 +279,7 @@ nav {
     align-items: center;
     height: 25.25rem;
     width: 28.825rem ;
+    padding-top: 2.5rem;
     background-color: #ffffff;
     box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.2);
 }
@@ -335,6 +340,17 @@ nav {
     font-size: 18px;
     padding-bottom: 10px;
     color: #1670c6;
+}
+
+.content-project_post3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.content-project_post3 .content-project_post_background {
+    padding-top: 0;
 }
 
 .footer {
