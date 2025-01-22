@@ -202,6 +202,35 @@ nav {
     color: #ffffff;
 }
 
+.content-newfeed_title-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-newfeed_title .content-newfeed_title-text h2 {
+    position: relative;
+    font-size: 38px;
+    color: #1670c6;
+    margin: 30px 0;
+    padding: 20px 30px;
+    border-bottom: 2px solid #cccccc;
+    font-family: "UTMSwissCondensedBold";
+    text-align: center;
+}
+
+.content-newfeed_title .content-newfeed_title-text h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -4px;
+    height: 6px;
+    width: 140px;
+    border-radius: 8px;
+    background-color: #1670c6;
+}
+
 
 
 .footer {
