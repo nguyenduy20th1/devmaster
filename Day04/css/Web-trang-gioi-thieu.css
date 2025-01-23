@@ -231,6 +231,16 @@ nav {
     background-color: #1670c6;
 }
 
+.content-introduction_body {
+    display: flex;
+
+}
+
+.content-introduction_body-text {
+    max-width: 50%;
+    text-align: justify;
+}
+
 
 
 .footer {
