@@ -358,13 +358,141 @@ nav {
 
 .content-corevalue_body {
     position: relative;
+    display: flex;
+    justify-content: space-between;
     top: -8rem;
     background-image: url(../css/img/VectorSmartObjectCore.png), url(../css/img/Rectangle526.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 
+.content-corevalue_body-left {
+    position: absolute;
+    width: 24%;
+    left: 9rem;
+    bottom: 9rem;
+    text-align: right;
+}
 
+.content-corevalue_body-right {
+    position: absolute;
+    width: 24%;
+    right: 9rem;
+    bottom: 9rem;
+}
+
+.content-corevalue_body-left ul li,
+.content-corevalue_body-right ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 12.5rem;
+    list-style: none;
+    padding: 2rem 0;
+}
+
+.content-corevalue_body-left ul li h3,
+.content-corevalue_body-right ul li h3 {
+    padding-bottom: .4rem;
+    font-family: "UTMSwissCondensedBold";
+}
+
+.content-project_menu {
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content-project_menu ul{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-project_menu ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: 4.5rem;
+    width: 28rem;
+    background-color: #d4d4d4;
+}
+
+.content-project_menu ul li a {
+    text-decoration: none;
+    color: #1670c5;
+    font-size: 24px;
+    font-family: "UTMSwissCondensedBold";
+}
+
+.content-project_menu ul .project-selection {
+    background-color: #1670c5;
+}
+
+.content-project_menu ul .project-selection a {
+    color: #ffffff;
+}
+
+.content-leader {
+    background-color: f6f6f6;
+}
+
+.content-leader_body-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-leader_body-info-detail {
+
+}
+
+.content-leader_body-info-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.content-leader_body-info-img::after {
+    position: absolute;
+    content: "";
+    bottom: 4px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-bottom: 60px solid #ffa200;
+}
+
+.content-leader_body-info-text {
+    width: 21rem;
+    color: #1670c5;
+}
+
+.content-leader_body-info-text h2,h3 {
+    font-family: "UTMSwissCondensedBold";
+}
+
+.content-leader_body-info-text h3 {
+    padding-top: .6rem;
+    font-size: 1.6rem;
+}
+
+.content-leader_body-info-text hr {
+    margin: .6rem 0;
+}
+
+.content-leader_body-info-text h2 {
+    font-size: 2rem;
+}
+
+.content-leader_body-info-text p {
+    color: #000000;
+    font-size: 1.5rem;
+}
 
 .footer {
     position: relative;
