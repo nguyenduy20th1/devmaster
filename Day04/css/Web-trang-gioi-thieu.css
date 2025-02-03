@@ -301,8 +301,7 @@ nav {
 .content-vision {
     position: relative;
     background-image: url(../css/img/BgrVectorSmartObject.png);
-    background-size: cover;
-    height: 44rem;
+    height: 56rem;
 }
 
 .content-vision > .content-newfeed_title {
@@ -322,6 +321,34 @@ nav {
 .content-vision_body-text p {
     font-size: 1.2rem;
     line-height: 1.6;
+}
+
+.content-vision_body-contructor {
+    display: flex;
+    justify-content: space-between;
+    height: 36rem;
+}
+
+.content-vision_body-contructor-img {
+    width: 100%;
+    height: auto;
+}
+
+.content-vision_body-contructor-1 {
+
+}
+
+.content-vision_body-contructor-text {
+    width: 21rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.content-vision_body-contructor-text h3 {
+    font-family: "UTMSwissCondensedBold";
+    color: #1670c6;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
 }
 
 .footer {
