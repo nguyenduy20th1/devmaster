@@ -351,6 +351,21 @@ nav {
     padding-bottom: 1rem;
 }
 
+.content-corevalue {
+    height: 79rem;
+    background-image: url(../css/img/VectorSmartObject-CoreV.png);
+}
+
+.content-corevalue_body {
+    position: relative;
+    top: -8rem;
+    background-image: url(../css/img/VectorSmartObjectCore.png), url(../css/img/Rectangle526.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
 .footer {
     position: relative;
     display: block;
