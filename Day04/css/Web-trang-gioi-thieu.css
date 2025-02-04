@@ -294,8 +294,13 @@ nav {
 .content-introduction_body-img .content-introduction_body-img-4 {
     position: absolute;
     left: 52rem;
-    top: 11rem;
+    top: 12rem;
     z-index: 1;
+}
+
+.content-introduction_body-img-4 img {
+    width: 7.4rem;
+    height: auto;
 }
 
 .content-vision {
@@ -486,12 +491,18 @@ nav {
 }
 
 .content-leader_body-info-text h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .content-leader_body-info-text p {
     color: #000000;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.content-fields_body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer {
