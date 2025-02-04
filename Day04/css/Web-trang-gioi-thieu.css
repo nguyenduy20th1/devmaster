@@ -444,6 +444,7 @@ nav {
 
 .content-leader {
     background-color: f6f6f6;
+    padding-bottom: 6rem;
 }
 
 .content-leader_body-info {
@@ -497,6 +498,40 @@ nav {
 .content-leader_body-info-text p {
     color: #000000;
     font-size: 1.4rem;
+}
+
+.content-fields {
+    background-image: url(../css/img/Bgr2VectorSmartObject.png);
+    height: 45rem;
+}
+
+.content-fields_body {
+    padding-top: 3rem;
+}
+
+.content-fields-option-item {
+    position: relative;
+}
+
+.fields-link {
+    position: absolute;
+    width: 17rem;
+    height: 5.2rem;
+    left: .2rem;
+    bottom: 15.4rem;
+    background-color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-fields-option-item a {
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.4rem;
+    font-family: "UTMSwissCondensedBold";
 }
 
 .content-fields_body {
