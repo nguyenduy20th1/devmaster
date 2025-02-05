@@ -631,13 +631,361 @@ nav {
     text-align: right;
 }
 
+.content-timeline {
+    position: relative;
+    height: 122rem;
+}
+
 .content-timeline_body {
     position: relative;
     padding-top: 4rem;
 }
 
 .content-timeline_body .timeline-rectangle {
-    
+    position: absolute;
+    left: 16rem;
+    width: 100%;
+    height: 100%;
+}
+
+.content-timeline_body .timeline-line {
+    position: absolute;
+    height: 100rem;
+    left: 3.6rem;
+    top: 6.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-timeline_body .timeline-line-years {
+    position: absolute;
+    height: 97rem;
+    left: 5.6rem;
+    top: 4.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #1670c5;
+}
+
+.content-timeline_body .timeline-line-years h2 {
+    text-align: center;
+    font-family: "UTMSwissCondensedBold";
+    font-size: 3rem;
+}
+
+.content-timeline_body .timeline-line-years h3 {
+    font-size: 2rem;
+}
+
+.content-timeline_body .timeline-rectangle7 {
+    position: absolute;
+    height: 69rem;
+    left: 14.9rem;
+    top: 14.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-timeline_body .timeline-rectangle7-month {
+    position: absolute;
+    height: 71.2rem;
+    left: 6.9rem;
+    top: 13.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.8rem;
+}
+
+.timeline-diagram {
+    position: absolute;
+    top: 5.2rem;
+    left: 23rem;
+    width: 65.5rem;
+    height: 99rem;
+}
+
+.diagram-title-item {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.diagram-title-itemBig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15.8rem;
+    height: 4.6rem;
+}
+
+.diagram-title-itemBig:nth-child(1) {
+    background-color: #ff9000;
+}
+
+.diagram-title-itemBig:nth-child(2) {
+    background-color: #d50d0d;
+}
+
+.diagram-title-itemBig:nth-child(3) {
+    background-color: #1093de;
+}
+
+.diagram-title-itemBig:nth-child(4) {
+    background-color: #086d52;
+}
+
+.diagram-title-itemBig h3 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: "UTMSwissCondensedBold";
+}
+
+.diagram-title-item2{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 62.2rem;
+    width: 15.8rem;
+    top: 8rem;
+}
+
+.diagram-title-item2 .diagram-title-itemSmall1 {
+    padding: 1.8rem;
+    background-color: #fcc783;
+}
+
+.diagram-title-item2 .diagram-title-itemSmall1:nth-child(3) {
+    padding: 4rem 1.8rem;
+}
+
+.diagram-title-item3 {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 44.2rem;
+    width: 15.8rem;
+    top: 8rem;
+    left: 16.6rem;
+}
+
+.diagram-title-item3 .diagram-title-itemSmall1 {
+    padding: 1.8rem;
+    background-color: #ffa7a7;
+}
+
+.diagram-title-item3 .diagram-title-itemSmall1:nth-child(2){
+    padding: 2.1rem 1.8rem;
+}
+
+.diagram-title-item3 .diagram-title-itemSmall1:nth-child(3),
+.diagram-title-item3 .diagram-title-itemSmall1:nth-child(4),
+.diagram-title-item3 .diagram-title-itemSmall1:nth-child(5),
+.diagram-title-item3 .diagram-title-itemSmall1:nth-child(6),
+.diagram-title-item3 .diagram-title-itemSmall1:nth-child(7) {
+    padding: .6rem 1.8rem;
+}
+
+.diagram-title-itemSmall1 h3 {
+    font-size: 1.6rem;
+    font-family: "UTMSwissCondensedBold";
+}
+
+.diagram-title-itemSmall1 p {
+    padding-top: .6rem;
+}
+
+.diagram-title-item4 {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 27.9rem;
+    width: 15.8rem;
+    top: 8rem;
+    left: 33.2rem;
+}
+
+.diagram-title-item4 .diagram-title-itemSmall1 {
+    text-align: center;
+    padding: 0 1.8rem;
+    background-color: #ade1ff;
+}
+
+.diagram-title-item4 .diagram-title-itemSmall1:nth-child(1) {
+    padding: 2.8rem 0;
+}
+
+.diagram-title-item4 .diagram-title-itemSmall1:nth-child(2) {
+    padding: .4rem 0;
+}
+
+.diagram-title-item4 .diagram-title-itemSmall1:nth-child(3) {
+    padding: .9rem 0;
+}
+
+.diagram-title-item4 .diagram-title-itemSmall1:nth-child(4) {
+    padding: .6rem 0;
+    color: #e80c0c;
+}
+
+.diagram-title-item5 {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 28.4rem;
+    width: 15.8rem;
+    top: 24.05rem;
+    right: 0;
+}
+
+.diagram-title-item5 .diagram-title-itemSmall1 {
+    padding: 1.8rem;
+    background-color: #a7dcce;
+}
+
+.diagram-title-item5 .diagram-title-itemSmall1:nth-child(1) {
+    padding: .9rem 2.6rem;
+}
+
+.diagram-title-item5 .diagram-title-itemSmall1:nth-child(2) {
+    padding: .9rem 1.8rem;
+    text-align: center;
+}
+
+.diagram-title-item6 {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0;
+}
+
+.diagram-title-itemBig-end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 15.8rem;
+    height: 14rem;
+    padding: 1rem;
+}
+
+.diagram-title-itemBig-end:nth-child(1) {
+    background-color: #ff9000;
+}
+
+.diagram-title-itemBig-end:nth-child(2) {
+    background-color: #d50d0d;
+}
+
+.diagram-title-itemBig-end:nth-child(3) {
+    background-color: #1093de;
+}
+
+.diagram-title-itemBig-end:nth-child(4) {
+    background-color: #086d52;
+}
+
+.diagram-title-itemBig-end h3 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: "UTMSwissCondensedBold";
+}
+
+.diagram-title-itemBig-end p {
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-family: "UTMSwissCondensedBold";
+}
+
+.diagram-item-arrow-head {
+    display: block;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    top: 5.4rem;
+}
+
+.diagram-item-arrow-head img:nth-child(1),
+.diagram-item-arrow-head img:nth-child(2),
+.diagram-item-arrow-head img:nth-child(3){
+    height: 2rem;
+}
+
+.diagram-item-arrow-head img:nth-child(4){
+    height: 18rem;
+}
+
+.diagram-item-arrow-foot {
+    display: block;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    bottom: 15.4rem;
+}
+
+/* .diagram-item-arrow-footlink {
+    display: block;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    left: 1.8px;
+    bottom: 24rem;
+}
+
+.diagram-item-arrow-footlink img:nth-child(1),
+.diagram-item-arrow-footlink img:nth-child(3) {
+    height: 3rem;
+}
+
+.diagram-item-arrow-footlink img:nth-child(2) {
+    height: 18rem;
+} */
+
+.content-meanding {
+
+}
+
+.content-meanding-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.meading-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 17rem;
+    height: 19.375rem;
+    background-color: #f6f6f6;
+}
+
+.meading-box-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5.5rem;
+    width: 15rem;
+    background-color: #ffffff;
+}
+
+.meading-box-text {
+    padding: 20px;
+    text-align: justify;
 }
 
 .footer {
