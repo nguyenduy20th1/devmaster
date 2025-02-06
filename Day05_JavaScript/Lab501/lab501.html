@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: inline-block;
+            width: 96px;
+            margin: 10px;
+        }
+        .btn {
+            padding-left: 120px;
+        }
+    </style>
+    <script src="../Lab501/lab501.js"></script>
+</head>
+<body>
+    <div class="border">
+        <h1>Login Information</h1>
+        <hr>
+        <form id="loginForm">
+            <label for="username" id="username">Username: </label>
+            <input type="text" class="username">
+            <br><br>
+            <label for="password" id="password">Password: </label>
+            <input type="password" class="password">
+            <br><br>
+            <div class="btn">
+                <input type="checkbox" id="rememberMe">
+            <label for="rememberMe" id="rememberMe"> Remember Me</label>
+            <br><br>
+            <input type="submit" value="Login">
+            <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
