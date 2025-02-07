@@ -1,14 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function(e) {
     var output = document.getElementById('bai2');
-    var content = "";
+    var content = '';
 
     for (var i = 0; i < 10; i++) {
-        content += "<p>";
+        content += '<p>';
         for (var j = 0; j <= i; j++) {
             content += j + " ";
         }
-        content += "</p>";
+        content += '</p>';
     }
-
     output.innerHTML = content;
-});
+    console.log(content);
+})
