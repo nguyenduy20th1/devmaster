@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
     var content = "";
 
     for (var i = 0; i < 10; i++) {
-        content += "<p>"; // Mở thẻ <p>
+        content += "<p>";
         for (var j = 0; j <= i; j++) {
-            content += j + " "; // Thêm số vào dòng
+            content += j + " ";
         }
-        content += "</p>"; // Đóng thẻ <p>
+        content += "</p>";
     }
 
-    output.innerHTML = content; // Gán nội dung vào div
+    output.innerHTML = content;
 });
