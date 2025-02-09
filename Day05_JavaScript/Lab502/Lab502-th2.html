@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = prompt("Nhập số a: ");
+        var b = prompt("Nhập số b: ");
+        var c = prompt("Nhập số c: ");
+
+        var delta = b*b - 4*a*c;
+
+        if (a === 0) {
+            pt1 (b, c);
+        }
+        else {
+            pt2 (a, b, c);
+        }
+
+        function pt1(b, c) {
+            if (b === 0) {
+                if (c === 0) {
+                    document.write("Phương trình có vô số nghiệm");
+                }
+                else {
+                    document.write("Phương trình vô nghiệm");
+                }
+            }
+            else {
+                var x = -c / b;
+                document.write("Phương trình có một nghiệm: x = " + x);
+            }
+        }
+
+        function pt2(a, b, c) {
+            if (delta < 0) {
+                document.write("Phương trình vô nghiệm");
+            }
+            else if (delta === 0) {
+                var x = -b / (2*a);
+                document.write("Phương trình có một nghiệm kép: x1 = x2 = " + x);
+            }
+            else {
+                var x1 = (-b + Math.sqrt(delta)) / (2*a);
+                var x2 = (-b - Math.sqrt(delta)) / (2*a);
+                document.write("Phương trình có hai nghiệm phân biệt: x1 = " + x1 + ", x2 = " + x2);
+            }
+        }
+        
+    </script>
+</body>
+</html>
