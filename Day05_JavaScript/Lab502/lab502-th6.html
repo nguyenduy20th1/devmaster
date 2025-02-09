@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sole = sochan = 0;
+        var tongle = tongchan = 0;
+        var dataArray = [4,6,9,11,34,22,57,68,90,21,35,77];
+
+        document.write("Số lượng phần tủ trong mảng là: " + dataArray.length + "<br>");
+
+        for (var i = 0; i < dataArray.length; i++) {
+            if (dataArray[i] % 2 == 0) {
+                tongchan += dataArray[i];
+                if (sochan.length == 0) {
+                    sochan += dataArray[i];
+                } else {
+                    sochan += ', ' + dataArray[i];
+                }
+            } else {
+                tongle += dataArray[i];
+                if (sole.length == 0) {
+                    sole += dataArray[i];
+                } else {
+                    sole += ', ' + dataArray[i];
+                }
+            }
+        }
+        document.write("Số chẵn trong mảng là: " + sochan + "<br>");
+        document.write("Tổng của các số chẵn trong mảng là: " + tongchan + "<br>");
+        document.write("Số lẻ trong mảng là: " + sole + "<br>");
+        document.write("Tổng của các số lẻ trong mảng là: " + tongle + "<br>");
+    </script>
+</body>
+</html>

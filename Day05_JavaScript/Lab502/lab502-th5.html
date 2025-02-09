@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var newtext = '';
+        var txt = 'Học lập trình web';
+        document.write("Độ dài của chuỗi là: " + txt.length + "<br>");
+
+        for (var i = 0; i < txt.length; i++) {
+            if (i == 0) {
+                newtext += txt[i].charCodeAt(0);
+            }
+            else {
+                newtext += ', ' + txt[i].charCodeAt(0);
+            }
+        }
+        
+        document.write("Chuỗi Hcharcode: " + newtext + "<br>");
+
+        var arrText = newtext.split(', ');
+        for (var i = 0; i < arrText.length; i++) {
+            document.write(String.fromCharCode(arrText[i]));
+        }
+    </script>
+</body>
+</html>
