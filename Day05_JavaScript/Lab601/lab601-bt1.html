@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .success {
+            color: green;
+        }
+        .fail {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,8 +22,9 @@
         <input type="text" name="textInfo" id="textInfo" class="textInfo">
         <input type="button" value="Check" name="check" id="check" onclick="infoName()">
         <br>
-        <label for="" id="sucess"></label>
-        <label for="" id="sucess"></label>
+        <br>
+        <div id="infoSucess"></div>
+        <label for="" id="textNoti"></label>
     </div>
     <script>
         var listInfo = [
@@ -50,16 +59,23 @@
         function infoName() {
             for (var i = 0; i < listInfo.length; i++) {
                 if (listInfo[i].name === inputInfo.value) {
-                    document.getElementById("txtErrorUserName").innerHTML = "Bạn đã đăng kí Thành Công";
 
-                    document.write(`
-                <h2>Thông tin của bạn:</h2>
-                <p>Họ và tên: ${listInfo[i].name}</p>
-                <p>Tuổi: ${listInfo[i].age}</p>
-                <p>Địa chỉ: ${listInfo[i].address}</p>
-                <p>Số điện thoại: ${listInfo[i].phone}</p>
-            `);
+                    document.getElementById("textNoti").innerHTML = "Bạn đã đăng kí Thành Công";
+                    document.getElementById("textNoti").className = "success";
+
+                    document.getElementById("infoSucess").innerHTML =`
+                    <h3>Thông tin của bạn:</h3>
+                    <p>Họ và tên: ${listInfo[i].name}</p>
+                    <p>Tuổi: ${listInfo[i].age}</p>
+                    <p>Địa chỉ: ${listInfo[i].address}</p>
+                    <p>Số điện thoại: ${listInfo[i].phone}</p>
+                    `;
                     return;
+                }
+                else {
+                    document.getElementById("infoSucess").innerHTML = "";
+                    document.getElementById("textNoti").innerHTML = "Bạn chưa đăng kí";
+                    document.getElementById("textNoti").className = "fail";
                 }
             }
         }
