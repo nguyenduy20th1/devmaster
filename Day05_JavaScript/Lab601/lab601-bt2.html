@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <table>
+            <caption>
+                <h2>New Product:</h2>
+            </caption>
+            <tr>
+                <td>ID: </td>
+                <td><input type="text" name="productID" id="productID"></td>
+            </tr>
+            <tr>
+                <td>Tên sản phẩm: </td>
+                <td><input type="text" name="productName" id="productName"></td>
+            </tr>
+            <tr>
+                <td>Giá: </td>
+                <td><input type="text" name="price" id="price"></td>
+            </tr>
+            <tr>
+                <td>Số lượng: </td>
+                <td><input type="number" name="quantity" id="quantity"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        var arr_product = [];
+        function addPoduct(productID, productName, price, quantity) {
+            this.productID = productID;
+            this.productName = productName;
+            this.price = price;
+            this.quantity = quantity;
+        }
+    </script>
+</body>
+</html>
