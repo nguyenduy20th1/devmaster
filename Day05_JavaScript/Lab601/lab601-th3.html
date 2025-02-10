@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table width="120" border="1">
+        <tr>
+            <td colspan="4">
+                <input type="text" name="number" id="number" class="number">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" name="btn1" id="btn1" value="1" onclick="addNumber(1)">
+            </td>
+            <td>
+                <input type="button" name="btn2" id="btn2" value="2" onclick="addNumber(2)">
+            </td>
+            <td>
+                <input type="button" name="btn3" id="btn3" value="3" onclick="addNumber(3)">
+            </td>
+            <td>
+                <input type="button" name="plus" id="plus" value="+" onclick="pheptoan('+')">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" name="btn4" id="btn4" value="4" onclick="addNumber(4)">
+            </td>
+            <td>
+                <input type="button" name="btn5" id="btn5" value="5" onclick="addNumber(5)">
+            </td>
+            <td>
+                <input type="button" name="btn6" id="btn6" value="6" onclick="addNumber(6)">
+            </td>
+            <td>
+                <input type="button" name="sub" id="sub" value="-" onclick="pheptoan('-')">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" name="btn7" id="btn7" value="7" onclick="addNumber(7)">
+            </td>
+            <td>
+                <input type="button" name="btn8" id="btn8" value="8" onclick="addNumber(8)">
+            </td>
+            <td>
+                <input type="button" name="btn9" id="btn9" value="9" onclick="addNumber(9)">
+            </td>
+            <td>
+                <input type="button" name="nhan" id="nhan" value="*" onclick="pheptoan('*')">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" name="clearNumber" id="clearNumber" value="C" onclick="clearNumber()">
+            </td>
+            <td>
+                <input type="button" name="btn0" id="btn0" value="0" onclick="addNumber(0)">
+            </td>
+            <td>
+                <input type="button" name="equal" id="equal" value="=" onclick="calculate()">
+            </td>
+            <td>
+                <input type="button" name="chia" id="chia" value="/" onclick="pheptoan('/')">
+            </td>
+        </tr>
+    </table>
+    <script>
+        var expression = "";
+        function addNumber(num) {
+            expression += num;
+            document.getElementById("number").value = expression;
+        }
+        function pheptoan(op) {
+            expression += op;
+            document.getElementById("number").value = expression;
+        }
+        function clearNumber() {
+            expression = "";
+            document.getElementById("number").value = expression;
+        }
+        function calculate() {
+            try {
+                var result = eval(expression);
+                document.getElementById("number").value = result;
+            }
+            catch (error) {
+                document.getElementById("number").value = "Error";
+            }
+        }
+    </script>
+</body>
+
+</html>

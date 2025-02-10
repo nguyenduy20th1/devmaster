@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <table width="350">
+            <caption>
+                <h2>Login</h2>
+            </caption>
+            <tr>
+                <td>UserName</td>
+                <td>
+                    <input type="text" name="userName" id="userName" placeholder="Nhập tên đăng nhập">
+                    <br>
+                    <label for="" id="txtErrorUserName"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" name="password" id="password" placeholder="Nhập tên mật khẩu">
+                    <br>
+                    <label for="" id="txtErrorPassword"></label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="Login" name="login" id="login" onclick="checkLogin()">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function checkLogin() {
+            var userName = document.getElementById("userName");
+            var password = document.getElementById("password");
+            if (userName.value == "") {
+                document.getElementById("txtErrorUserName").innerHTML = "Bạn chưa nhập Username";
+                document.getElementById("txtErrorUserName").className = "error";
+                userName.focus();
+            }
+            else if (password.value == "") {
+                document.getElementById("txtErrorPassword").innerHTML = "Bạn chưa nhập Password";
+                document.getElementById("txtErrorPassword").className = "error";
+                password.focus();
+            }
+        }
+    </script>
+</body>
+</html>
