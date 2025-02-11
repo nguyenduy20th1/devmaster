@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .success {
+            color: green;
+        }
+        .fail {
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <form action="">
@@ -27,16 +35,56 @@
                 <td>Số lượng: </td>
                 <td><input type="number" name="quantity" id="quantity"></td>
             </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="Thêm sản phẩm" name="add" id="add" onclick="addProduct()"></td>
         </table>
+        <div id="message"></div>
+        <div id="listProduct"></div>
     </form>
 
     <script>
         var arr_product = [];
-        function addPoduct(productID, productName, price, quantity) {
-            this.productID = productID;
-            this.productName = productName;
-            this.price = price;
-            this.quantity = quantity;
+
+        function addProduct() {
+            var productID = document.getElementById("productID").value.trim();
+            var productName = document.getElementById("productName").value.trim();
+            var price = document.getElementById("price").value.trim();
+            var quantity = document.getElementById("quantity").value.trim();
+            var message = document.getElementById("message");
+            var listProduct = document.getElementById("listProduct");
+            
+            if (productID == "" || productName == "" || price == "" || quantity == "") {
+                message.innerHTML = "Vui lòng nhập đầy đủ thông tin";
+                message.className = "fail";
+                return;
+            }
+
+            var newProduct = {
+                productID: productID,
+                productName: productName,
+                price: price,
+                quantity: quantity
+            }
+            message.innerHTML = "Thêm mới sản phẩm thành công";
+            message.className = "success";
+            arr_product.push(newProduct);
+            console.log(arr_product);
+
+            for (var i = 0; i < arr_product.length; i++) {
+                listProduct.innerHTML = `
+                <h3>Danh sách sản phẩm</h3>
+                <p>ID: ${arr_product[i].productID}</p>
+                <p>Tên sản phẩm: ${arr_product[i].productName}</p>
+                <p>Giá: ${arr_product[i].price}</p>
+                <p>Số lương: ${arr_product[i].quantity}</p>
+                `
+            }
+
+            document.getElementById("productID").value = "";
+            document.getElementById("productName").value = "";
+            document.getElementById("price").value = "";
+            document.getElementById("quantity").value = "";
         }
     </script>
 </body>
