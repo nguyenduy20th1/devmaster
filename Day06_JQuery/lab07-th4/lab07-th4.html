@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../lab07-th4/lab07-th4.css"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#header-menu li a").click(function (e) {
+                e.preventDefault();
+
+                let index = $(this).parent().index() + 1;
+
+                $(".textbox1, .textbox2, .textbox3, .textbox4").hide();
+                $(".textbox" + index).show();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <ul id="header-menu">
+            <li><a href="">HTML</a></li>
+            <li><a href="">CSS</a></li>
+            <li><a href="">jquery</a></li>
+            <li><a href="">PHP</a></li>
+        </ul>
+        <div id="header-text">
+            <div class="textbox1">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio pariatur natus voluptas quia
+                    adipisci nobis deleniti animi, tenetur nisi, eveniet dignissimos quisquam magnam beatae? Sequi
+                    tempore architecto assumenda neque minima.</p>
+            </div>
+            <div class="textbox2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit adipisci maiores eligendi laboriosam
+                    culpa consequatur. Alias, corporis dolor minus, cumque consequuntur blanditiis repudiandae quisquam
+                    nihil sunt animi, delectus molestias explicabo.</p>
+            </div>
+            <div class="textbox3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At beatae dicta quas esse natus modi tempora
+                    amet, ut id unde tempore fuga in corporis voluptatibus. Hic reiciendis quidem quibusdam molestiae.
+                </p>
+            </div>
+            <div class="textbox4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nesciunt quos illo. Illo, modi
+                    labore sed eveniet nihil perspiciatis aliquid vero perferendis velit eligendi voluptatem magni, enim
+                    dolor placeat quisquam.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
