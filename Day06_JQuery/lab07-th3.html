@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .img-slide {
+            padding: 100px 0;
+            height: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .img-slide img {
+            height: 400px;
+            width: auto;
+        }
+
+        .img-list {
+            width: 100%;
+        }
+        .img-list ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            padding: 10px;
+        }
+        .img-list ul li a img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function() {
+            $('.img-list ul li a').click(function(e) {
+                e.preventDefault();
+                var imgSrc = $(this).children('img').attr('src');
+                $('.img-slide img').attr('src', imgSrc);
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="img-slide">
+            <img src="" alt="">
+        </div>
+        <div class="img-list">
+            <ul>
+                <li><a href="" id="meme1"><img src="../img/meme1.jpg" alt=""></a></li>
+                <li><a href="" id="meme2"><img src="../img/meme2.jpg" alt=""></a></li>
+                <li><a href="" id="meme3"><img src="../img/meme3.jpg" alt=""></a></li>
+                <li><a href="" id="meme4"><img src="../img/meme4.jpg" alt=""></a></li>
+                <li><a href="" id="meme5"><img src="../img/meme5.jpg" alt=""></a></li>
+                <li><a href="" id="meme6"><img src="../img/meme6.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

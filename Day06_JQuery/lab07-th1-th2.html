@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <style>
-        #content{
+        #content {
             width: 500px;
             margin: 20px auto;
             padding: 10px;
             border: 1px solid #ccc;
         }
-        ul{ 
+
+        ul {
             display: flex;
             justify-content: space-around;
             align-items: center;
             list-style: none;
             padding: 10px;
         }
-        li{
+
+        li {
             margin-right: 10px;
             border: 1px solid #ccc;
         }
-        a{
+
+        a {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -32,54 +36,45 @@
             text-decoration: none;
             color: #000;
         }
-        #testColor{
+
+        #testColor {
             width: 300px;
             height: 100px;
             margin: 20px auto;
             border: 1px solid #ccc;
         }
-        .mau1{
+
+        .mau1 {
             background-color: red;
         }
-        .mau2{
+
+        .mau2 {
             background-color: blue;
         }
-        .mau3{
+
+        .mau3 {
             background-color: green;
         }
-        .mau4{
+
+        .mau4 {
             background-color: yellow;
         }
-        .mau5{
+
+        .mau5 {
             background-color: pink;
         }
     </style>
     <script>
-        $(document).ready(function($){
-            $('#mau1').click(function(e) {
+        $(document).ready(function () {
+            $('[id^=mau]').click(function (e) { //id^=mau là chọn các id bắt đầu bằng mau
                 e.preventDefault();
-                $('#testColor').removeClass().addClass('mau1');
-            })
-            $('#mau2').click(function(e) {
-                e.preventDefault();
-                $('#testColor').removeClass().addClass('mau2');
-            })
-            $('#mau3').click(function(e) {
-                e.preventDefault();
-                $('#testColor').removeClass().addClass('mau3');
-            })
-            $('#mau4').click(function(e) {
-                e.preventDefault();
-                $('#testColor').removeClass().addClass('mau4');
-            })
-            $('#mau5').click(function(e) {
-                e.preventDefault();
-                $('#testColor').removeClass().addClass('mau5');
-            })
-        })
-
-    </script> 
+                let className = $(this).attr('id'); //attr là lấy ra giá trị của thuộc tính (vd: id="mau2" thì lấy ra giá trị là mau2 để gắn vào biến className)
+                $('#testColor').removeClass().addClass(className);
+            });
+        });
+    </script>
 </head>
+
 <body>
     <div id="content">
         <h1>Chọn màu:</h1>
@@ -93,4 +88,5 @@
         <div id="testColor"></div>
     </div>
 </body>
+
 </html>
