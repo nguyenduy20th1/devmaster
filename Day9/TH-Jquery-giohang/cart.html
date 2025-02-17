@@ -14,23 +14,27 @@
 </head>
 
 <body>
-    <div class="container mt-5">
-        <h1 class="">Giỏ hàng</h1>
-        <div class="row">
-            <div class="item d-flex align-items-center">
-                <img src="/img/meme1.jpg" alt="">
-                <div class="col-3">
-                    <h3 class="title">Tên sản phẩm</h3>
-                    <div class="container">
-                        <div class="price-input">
-                            <button id="price-btn" onclick="decrease()">-</button>
-                            <input type="text" id="price" class="price-value" value="1" readonly>
-                            <button id="price-btn" onclick="increase()">+</button>
-                        </div>
+    <div class="container p-4">
+        <div class="row d-flex justify-content-around">
+            <div class="cart-item col-md-6 border border-secondary rounded p-4">
+                <div class="p-2">
+                    <h2>Giỏ hàng</h2>
+                    <div class="cart-list" id="cart-list">
+                        
                     </div>
-                    <p>Giá: <b>1</b> VND</p>
-                    <p>Thành tiền: <b>1</b> VND</p>
                 </div>
+            </div>
+            <div class="cart-total col-md-5 border border-secondary rounded p-4">
+                <h2>Tóm tắt đơn hàng</h2>
+                <p>Tổng thành tiền: <b id="item-totalAll">0</b> VND</p>
+                <p>Phí vận chuyển: <b id="shipping-fee"></b> <b>VND</b>
+                <p>Miễn phí vận chuyển với đơn hàng trên 10 triệu</p>
+                </p>
+                <p>Thông tin vẫn chuyển: Sản phẩm sẽ được giao đến trong vòng 2-7 ngày. Chi tiết liên hệ
+                    <b>0987623456</b>.</p>
+                <p>Tổng tiền: <b id="item-totalAll">0</b> VND</p>
+                <button class="btn btn-primary">Thanh toán</button>
+                <button class="btn btn-secondary">Tiếp tục mua hàng</button>
             </div>
         </div>
     </div>
